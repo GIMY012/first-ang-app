@@ -1,0 +1,23 @@
+<nav class="navbar bg-dark navbar-expand-lg border-bottom border-body position-fixed end-0 start-0 z-3" data-bs-theme="dark" >
+    <div class="container p-2 " #contianer (scroll)="getNavBigger($event)">
+      <a class="navbar-brand " routerLink="startFramework"><h1>{{header}}</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+        
+          <li class="nav-item">
+            <a class="nav-link px-3" routerLinkActive="bg-success rounder-pill px-0 text-white" routerLink="startFramework/about" >{{about}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" routerLinkActive="bg-success rounder-pill px-0 text-white" routerLink="startFramework/portoflio">{{portfolio}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" routerLinkActive="bg-success rounder-pill px-0 text-white" routerLink="startFramework/contact">{{contact}}</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
